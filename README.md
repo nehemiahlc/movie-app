@@ -8,7 +8,7 @@ A responsive and modern movie discovery application built with React, Tailwind C
 
 ## 🚀 Live Demo
 
-👉 [View Live App](movie-app-seven-weld.vercel.app)
+👉 [View Live App]([movie-app-seven-weld.vercel.app](https://movie-app-seven-weld.vercel.app/))
 
 ---
 
