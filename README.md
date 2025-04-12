@@ -1,12 +1,37 @@
-# React + Vite
+# 🎬 Movie Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern movie discovery application built with React, Tailwind CSS, and The Movie Database (TMDB) API. This project allows users to browse popular films and search for movies by keyword, with real-time results and error handling.
 
-Currently, two official plugins are available:
+> This application was developed as part of a hands-on tutorial to deepen my understanding of React fundamentals, hooks, component architecture, and API integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [View Live App](movie-app-seven-weld.vercel.app)
+
+---
+
+## 🔧 Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** Tailwind CSS
+- **API:** [The Movie Database (TMDB)](https://www.themoviedb.org/documentation/api)
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **Backend (optional):** [Appwrite](https://appwrite.io/) – for database and authentication features
+
+---
+
+## 🚀 Features
+
+- 🔍 Search movies by title
+- 🎞️ Display popular/trending movies
+- 💬 Dynamic error handling and loading indicators
+- 🧠 Built with reusable and modular components
+- 💡 Clean and responsive UI
+
+---
+
+## 🤝 Credits
+- TMDB for the movie API
+- JS Mastery
