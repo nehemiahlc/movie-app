@@ -12,7 +12,6 @@ const MovieDetailsCard = ({ movie }) => {
         runtime,
         genres,
         production_companies,
-        cast,
         budget,
         revenue,
     } = movie;
@@ -71,9 +70,10 @@ const MovieDetailsCard = ({ movie }) => {
                         ))}
                     </div>
                 )}
-
+                <div className="mt-4">
+                <h3 className="text-light-200 text-xl font-bold mb-2">Overview</h3>
                 <p className="text-light-100 text-base leading-relaxed">{overview}</p>
-
+                </div>
                 {production_companies && (
                     <div className="production-companies flex flex-wrap gap-2 mt-4">
                         <p className="font-bold text-light-200 text-lg">Production Companies:</p>
@@ -88,33 +88,13 @@ const MovieDetailsCard = ({ movie }) => {
                     </div>
                 )}
 
-                {cast && (
-                    <div className="cast mt-4">
-                        <p className="font-bold text-light-200 text-lg">Cast:</p>
-                        <div className="flex flex-wrap gap-2">
-                            {cast.slice(0, 5).map((actor) => (
-                                <span
-                                    key={actor.id}
-                                    className="bg-light-100/10 px-3 py-1 text-sm text-white rounded-full"
-                                >
-                                    {actor.name}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                {budget > 0 && (
+                    <p className="text-light-100 text-base">Budget: ${budget.toLocaleString()}</p>
+                )}
+                {revenue > 0 && (
+                    <p className="text-light-100 text-base">Revenue: ${revenue.toLocaleString()}</p>
                 )}
 
-                {(budget || revenue) && (
-                    <div className="finance-details mt-4">
-                        <p className="font-bold text-light-200 text-lg">Finance Details:</p>
-                        {budget && (
-                            <p className="text-light-100 text-base">Budget: ${budget.toLocaleString()}</p>
-                        )}
-                        {revenue && (
-                            <p className="text-light-100 text-base">Revenue: ${revenue.toLocaleString()}</p>
-                        )}
-                    </div>
-                )}
             </div>
         </div>
     );
