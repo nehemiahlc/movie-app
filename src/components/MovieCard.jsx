@@ -1,10 +1,14 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 const MovieCard = ({ movie:
-    { title, vote_average, poster_path, release_date, original_language  }
+    { title, vote_average, poster_path, release_date, original_language, id  }
 }) => {
+
     return (
-        <div className="movie-card">
+        <Link to={`/movie/${id}`}
+                className="movie-card"
+        >
         <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : '/No-Poster.png'} alt={title} />
 
             <div className="mt-4">
@@ -24,7 +28,7 @@ const MovieCard = ({ movie:
                 </div>
 
             </div>
-        </div>
+        </Link>
     )
 }
 export default MovieCard
