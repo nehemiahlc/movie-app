@@ -26,7 +26,7 @@ A responsive and modern movie discovery application built with React, Tailwind C
 
 - 🔍 Search movies by title with real-time results
 - 🎞️ Display popular/trending movies
-🎬 Click on a movie poster to explore detailed info like cast, genres, runtime, budget, and more!(Selecting movies in the trending list does not work, YET!)
+🎬 Click on a movie poster to explore detailed info like overview, genres, runtime, budget, and more!(Selecting movies in the trending list does not work, YET!)
 - 💬 Dynamic error handling and loading indicators
 - 🧠 Built with reusable and modular components
 - 💡 Clean and responsive UI
